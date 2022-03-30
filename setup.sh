@@ -8,3 +8,7 @@ wine_sound=(lib32-alsa-lib lib32-alsa-plugins lib32-pipewire)
 
 sudo pacman -Sy --noconfirm --needed ${wine_pkgs[@]}
 sudo pacman -Sy --noconfirm --needed ${wine_sound[@]}
+
+# install .Net 4.6.2 in a 64bit wineprefix.
+sudo winetricks --self-update
+winetricks -q dotnet462
