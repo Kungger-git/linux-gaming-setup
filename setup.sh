@@ -11,4 +11,4 @@ sudo pacman -Sy --noconfirm --needed ${wine_sound[@]}
 
 # install .Net 4.6.2 in a 64bit wineprefix.
 sudo winetricks --self-update
-winetricks -q dotnet462
+winetricks -q d3dcompiler_43 d3dx11_43 dotnet20 dotnet35 dotnet462
